@@ -25,6 +25,10 @@ const userSchema = new Schema({
       type:String,
       default: '',
     },
+    penjelasan_skor:{
+      type:String,
+      default: '',
+    }
 });
 
 module.exports = mongoose.model('Users',userSchema);
