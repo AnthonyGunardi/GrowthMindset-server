@@ -3,17 +3,25 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
     nama_peserta:{
       type:String,
-      required:true,
+      default: ''
     },
     jabatan_peserta:{
       type:String,
-      required:true,
+      default: ''
     },
     nama_perusahaan:{
       type:String,
-      required:true,
+      default: ''
     },
     nomor_hp:{
+      type:String,
+      default: ''
+    },
+    usia:{
+      type:String,
+      required:true,
+    },
+    departemen:{
       type:String,
       required:true,
     },
